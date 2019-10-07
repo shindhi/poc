@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3578307f-6d9f-4c93-aeb3-afc4318c774f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invillia/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invillia/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invillia/domain/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invillia/domain/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validCpf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../validCpf/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +32,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +49,7 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.invillia.Application" />
-      <module name="team" />
+      <module name="library" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.invillia.*" />
@@ -127,7 +131,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

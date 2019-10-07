@@ -1,43 +1,48 @@
 package com.invillia.domain;
 
+
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.StringJoiner;
 
 @Entity
-@Table(name = "team")
-public class Team {
+@Table(name = "member")
+public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+    private Long id;
 
     @Column(name = "name", nullable = false, length = 50)
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "id_team", nullable = false)
+    private Team team;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
-    @UpdateTimestamp
+    @CreationTimestamp
     @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updated;
+    private LocalDateTime updatedAt;
 
-    public Team() {
-    }
+    public Member() {}
 
-    public Team(String name) {
+    public Member(String name, Team team) {
         this.name = name;
+        this.team = team;
     }
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", "Team(", ")")
+        return new StringJoiner(", ", " Member(", ")")
                 .add("id = " + id)
                 .add("name = " + name)
+                .add("team = " + team)
                 .toString();
     }
 
@@ -49,15 +54,31 @@ public class Team {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public LocalDateTime getUpdated() {
-        return updated;
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
     }
 }
