@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.invilli'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-core', version: '2.1.2'
+}
