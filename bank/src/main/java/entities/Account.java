@@ -42,7 +42,7 @@ public class Account {
 
     public Account() {}
 
-    public Account(final String holder, final double balance, final TypeAccount typeAccount, final double loanLimit) {
+    public Account(final String holder, final double balance, final TypeAccount typeAccount) {
         this.holder = holder;
         this.balance = balance;
         this.typeAccount = typeAccount;
@@ -121,9 +121,9 @@ public class Account {
         this.balance = getBalance() + value;
     }
 
-    public void withdraw(double value, double limit) {
-        if (TypeAccount.CHECKIG_ACCOUNT == getTypeAccount()) {
-            if (getBalance() + value <= limit) {
+    public void withdraw(double value) {
+        if (typeAccount.equals("CHECKING")) {
+            if (getBalance() + value <= this.loanLimit) {
                 this.balance = getBalance() - value;
             }
             System.out.println("You have exceeded your limit");

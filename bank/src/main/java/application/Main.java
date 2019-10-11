@@ -17,7 +17,7 @@ public class Main {
         final AccountDAO accountDAO= new AccountDAO(entityManager);
 
         //Create
-        //accountDAO.insert(new Account("Diogo2", 2000.00, TypeAccount.valueOf("CHECKIG_ACCOUNT")));
+        accountDAO.insert(new Account("Diogo", 2000.00, TypeAccount.CHECKIG_ACCOUNT));
 
         //Search All
         System.out.println(accountDAO.findAll());
@@ -26,16 +26,15 @@ public class Main {
         //System.out.println(accountDAO.findById(4L));
 
         //Update
-        final Account account = accountDAO.findById(8L);
+        //final Account account = accountDAO.findById(8L);
 
         //Deposit
-        account.deposit(400.00);
+        //account.deposit(400.00);
 
         //Withdraw
-        //final double limit = 500.00;
-        //account.withdraw(499.00, limit);
+        //account.withdraw(499.00);
 
-        accountDAO.update(account);
+        //accountDAO.update(account);
 
         //Delete
         //accountDAO.delete(7L);
