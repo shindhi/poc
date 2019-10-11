@@ -28,6 +28,9 @@ public class Account {
     @Column(name = "type_account")
     private TypeAccount typeAccount;
 
+    @Column(name = "loan_limit", nullable = true)
+    private Double loanLimit;
+
     @CreationTimestamp
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
@@ -39,10 +42,11 @@ public class Account {
 
     public Account() {}
 
-    public Account(final String holder, final double balance, final TypeAccount typeAccount) {
+    public Account(final String holder, final double balance, final TypeAccount typeAccount, final double loanLimit) {
         this.holder = holder;
         this.balance = balance;
         this.typeAccount = typeAccount;
+        this.loanLimit = typeAccount.loanLimit;
     }
 
     @Override
@@ -87,6 +91,14 @@ public class Account {
 
     public void setTypeAccount(TypeAccount typeAccount) {
         this.typeAccount = typeAccount;
+    }
+
+    public Double getLoanLimit() {
+        return loanLimit;
+    }
+
+    public void setLoanLimit(Double loanLimit) {
+        this.loanLimit = loanLimit;
     }
 
     public LocalDateTime getCreatedAt() {

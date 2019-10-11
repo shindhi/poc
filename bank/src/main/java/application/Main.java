@@ -32,7 +32,7 @@ public class Main {
         account.deposit(400.00);
 
         //Withdraw
-        final double limit = 500.00;
+        //final double limit = 500.00;
         //account.withdraw(499.00, limit);
 
         accountDAO.update(account);
