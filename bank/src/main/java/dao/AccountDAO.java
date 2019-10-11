@@ -43,4 +43,13 @@ public class AccountDAO {
         entityManager.merge(account);
         transaction.commit();
     }
+
+    public void delete(final Long id) {
+        final EntityTransaction transaction = entityManager.getTransaction();
+
+        transaction.begin();
+        final Account account = findById(id);
+        entityManager.remove(account);
+        transaction.commit();
+    }
 }

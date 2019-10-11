@@ -5,6 +5,7 @@ import entities.enums.TypeAccount;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import javax.lang.model.element.TypeElement;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.StringJoiner;
@@ -46,7 +47,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Account.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", Account.class.getSimpleName() + "\n[\n", "\n]")
                 .add("id=" + id)
                 .add("holder = '" + holder + "'")
                 .add("balance = " + balance)
@@ -104,7 +105,18 @@ public class Account {
         this.updatedAt = updatedAt;
     }
 
-    public void withdraw(double value) {
-        this.balance = getBalance() - value;
+    public void deposit(double value) {
+        this.balance = getBalance() + value;
+    }
+
+    public void withdraw(double value, double limit) {
+        if (TypeAccount.CHECKIG_ACCOUNT == getTypeAccount()) {
+            if (getBalance() + value <= limit) {
+                this.balance = getBalance() - value;
+            }
+            System.out.println("You have exceeded your limit");
+        } else {
+            this.balance = getBalance() - value;
+        }
     }
 }
