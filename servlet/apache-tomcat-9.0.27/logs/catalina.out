@@ -1,0 +1,54 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2019 11:08:00.283 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.27
+17-Oct-2019 11:08:00.296 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 7 2019 09:57:22 UTC
+17-Oct-2019 11:08:00.296 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.27.0
+17-Oct-2019 11:08:00.296 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-65-generic
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.4+11-post-Ubuntu-1ubuntu218.04.3
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27
+17-Oct-2019 11:08:00.297 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27
+17-Oct-2019 11:08:00.436 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Oct-2019 11:08:00.436 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Oct-2019 11:08:00.437 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2019 11:08:00.437 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/conf/logging.properties
+17-Oct-2019 11:08:00.441 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Oct-2019 11:08:00.441 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Oct-2019 11:08:00.441 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Oct-2019 11:08:00.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Oct-2019 11:08:00.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Oct-2019 11:08:00.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27
+17-Oct-2019 11:08:00.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27
+17-Oct-2019 11:08:00.443 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/temp
+17-Oct-2019 11:08:00.443 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+17-Oct-2019 11:08:01.431 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Oct-2019 11:08:01.584 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Oct-2019 11:08:01.628 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [2.662] milliseconds
+17-Oct-2019 11:08:01.836 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Oct-2019 11:08:01.836 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.27]
+17-Oct-2019 11:08:01.874 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/examples]
+17-Oct-2019 11:08:03.304 ADVERTÊNCIA [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [102] milliseconds.
+17-Oct-2019 11:08:03.359 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/examples] has finished in [1.486] ms
+17-Oct-2019 11:08:03.360 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/manager]
+17-Oct-2019 11:08:03.421 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/manager] has finished in [61] ms
+17-Oct-2019 11:08:03.421 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/host-manager]
+17-Oct-2019 11:08:03.454 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/host-manager] has finished in [33] ms
+17-Oct-2019 11:08:03.454 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/ROOT]
+17-Oct-2019 11:08:03.502 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/ROOT] has finished in [47] ms
+17-Oct-2019 11:08:03.502 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/docs]
+17-Oct-2019 11:08:03.528 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/docs] has finished in [25] ms
+17-Oct-2019 11:08:03.534 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Oct-2019 11:08:03.545 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Oct-2019 11:08:03.565 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [1.936] milliseconds
+17-Oct-2019 16:38:47.902 INFORMAÇÕES [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/untitled.war]
+17-Oct-2019 16:38:48.060 INFORMAÇÕES [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Oct-2019 16:38:48.064 INFORMAÇÕES [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/incubadora/Documentos/incubadora/poc/servlet/apache-tomcat-9.0.27/webapps/untitled.war] has finished in [162] ms
+17-Oct-2019 16:40:12.200 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Oct-2019 16:40:12.647 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Oct-2019 16:40:12.653 INFORMAÇÕES [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Oct-2019 16:40:15.257 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Oct-2019 16:40:15.260 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Oct-2019 16:40:15.262 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Oct-2019 16:40:15.262 INFORMAÇÕES [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
