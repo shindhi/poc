@@ -14,7 +14,6 @@ public class AccountDAO {
         this.entityManager = entityManager;
     }
 
-
     public void insert(final Account account) {
         final EntityTransaction transaction = entityManager.getTransaction();
 

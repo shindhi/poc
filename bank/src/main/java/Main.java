@@ -1,8 +1,7 @@
-package application;
-
 import dao.AccountDAO;
 import entities.Account;
 import entities.enums.TypeAccount;
+import services.AccountServices;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,19 +16,21 @@ public class Main {
         final AccountDAO accountDAO= new AccountDAO(entityManager);
 
         //Create
-        accountDAO.insert(new Account("Diogo", 2000.00, TypeAccount.CHECKIG_ACCOUNT));
+        //accountDAO.insert(new Account("Diogo", 2000.00, TypeAccount.CHECKIG_ACCOUNT));
 
         //Search All
-        System.out.println(accountDAO.findAll());
+        //System.out.println(accountDAO.findAll());
 
         //Search Id
         //System.out.println(accountDAO.findById(4L));
 
-        //Update
-        //final Account account = accountDAO.findById(8L);
+        //Find By Id
+        final Account account = accountDAO.findById(8L);
 
         //Deposit
         //account.deposit(400.00);
+        new AccountServices(400.00, account, accountDAO);
+
 
         //Withdraw
         //account.withdraw(499.00);

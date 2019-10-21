@@ -117,9 +117,11 @@ public class Account {
         this.updatedAt = updatedAt;
     }
 
-    public void deposit(double value) {
-        this.balance = getBalance() + value;
-    }
+
+
+//    public void deposit(double value) {
+//        this.balance = getBalance() + value;
+//    }
 
     public void withdraw(double value) {
         if (typeAccount.equals("CHECKING")) {
