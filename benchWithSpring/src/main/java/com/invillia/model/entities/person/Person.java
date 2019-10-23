@@ -1,4 +1,4 @@
-package model.entities.person;
+package com.invillia.model.entities.person;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;

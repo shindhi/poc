@@ -1,4 +1,4 @@
-package model.entities.person;
+package com.invillia.model.entities.person;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

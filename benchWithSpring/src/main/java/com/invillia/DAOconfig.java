@@ -1,14 +1,13 @@
-package config;
+package com.invillia;
 
-import model.entities.person.PersonDAOImplementation;
+import com.invillia.model.entities.person.PersonDAO;
+import com.invillia.model.entities.person.PersonDAOImplementation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
-import model.entities.person.PersonDAO;
 
 @Configuration
 public class DAOconfig {
