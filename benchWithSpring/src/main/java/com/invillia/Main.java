@@ -6,9 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
     public static void main(String[] args) {
-        final var applocationContext = new AnnotationConfigApplicationContext("com.invillia");
+        final var applicationContext = new AnnotationConfigApplicationContext("com.invillia");
 
-        final PersonDAO personDAO = applocationContext.getBean("personDAO", PersonDAO.class);
+        final PersonDAO personDAO = applicationContext.getBean("personDAO", PersonDAO.class);
         personDAO.insert(new Person("Diogo", "000.000.00-00"));
     }
 }
